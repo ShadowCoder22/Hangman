@@ -1,5 +1,5 @@
 # Hangman
-A simple implementation of the game hangman
+Simple python implementation of the game hangman
 
 #### Building the project
 
