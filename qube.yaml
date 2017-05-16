@@ -1,0 +1,32 @@
+id: 2fbb1173-8b0e-4bc5-b5b5-2310b8766777
+version: v2
+name: Hangman
+apptype: api
+language: python
+containerName: hangman
+toolchain:
+  id: 591b36b2f62d42001ef994b4
+  name: Qubeship-Python-Toolchain
+opinion:
+  id: 591b36b38d0cb2000bae9dda
+  name: Qubeship default opinion
+endpoint:
+  id: 591b36b42a0603000bebf586
+  name: Qubeship Sandbox Cluster
+  type: target
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - dist/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
